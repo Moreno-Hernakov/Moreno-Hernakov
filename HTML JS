@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>
+                tugas magang
+            </title>
+            <link rel="stylesheet" href="webb.css">
+            <!-- <script src="jss.js"></script> -->
+            <!-- <script>
+                window.onload = function() {
+                    let input= document.querySelector('input[name=input]')
+                    let data = []
+
+                    function render (){
+                        document.querySelector('#list').innerHTML = ''
+                        data.forEach(datum => {
+                            let li = document.createElement('li')
+                            li.appendChild(document.createTextNode(datum))
+                            document.querySelector('#list').appendChild(li)
+                            
+                            
+                        })   
+                    };
+                    render()
+                }
+            </script> -->
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="hawan">
+                <H1>Website Daftar Tugas</H1> <br>
+            </div>
+            
+        <div>
+            <div id="newtask" class="pp">
+                <form action="#">
+                    <div class="inpit">
+                        <input  placeholder="  Masukan Nama Tugas" type="text" id="inpuut">
+                    </div>
+                    <button onclick="add"> SUBMIT </button>
+                </form>
+                <!-- <div id="tasks"></div> -->
+            </div>
+            <ul id="list">
+
+            </ul>
+        </div>
+        <!--Script-->
+    
+        <!-- <script src="jss.js"></script> -->
+        <script>
+            // const list = document.getElementById('list')
+
+            // function add (){
+            //     let newText = document.getElementById('inpuut')
+            //     // console.log(newText.value)
+
+            //     let li = document.createElement('li')
+            //     let txt = document.createTextNode(newText.value)
+
+            //     li.appendChild(txt)
+            //     list.appendChild(li)
+            // }
+            // add()
+
+            
+                let button = document.querySelector('#button');
+                let msg = document.querySelector('#message');
+
+                button.addEventListener('click', ()=>{
+                    msg.classList.toggle('reveal');
+                })
+
+            
+        </script>
+    </body>
+</html>
